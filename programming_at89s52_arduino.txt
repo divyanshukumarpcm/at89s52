@@ -1,0 +1,11 @@
+1. Burn ISP example program to arduino - It can be find under example codes for arduino in IDE.
+2. Connect pin 8 of at89s52 to pin 13 arduino
+          pin RST(9) to pin 10
+          pin 7 to pin 12
+          pin 6 to pin 11
+ 3. Code your program and convert it to hex
+ 4. You will require a config file for your micro controller. Search on net.
+ 5. Open cmd and type:
+    "full_path_of_avrdude.exe_which_comes_with_arduino_ide" -C "full_path_of_config_file" -c stk500v1 -P COM6 -p 89s52 -b 19200 -U flash:w:"full_path_of_compiled_hex_file":i
+    
+    NOTE: Replace COM6 with the COM Port you have connected your arduino with
