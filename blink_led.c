@@ -1,3 +1,5 @@
+//Blinks led connected to P3.0, P3.1 ... P3.7 pins of AT89S52 Chip
+
 #include<reg51.h> //Library containing register definition of AT89S52 Chip
 
 
